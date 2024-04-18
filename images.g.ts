@@ -30,6 +30,13 @@ namespace myImages {
             case "ember2":return img`
 2 
 `;
+            case "image4":
+            case "select":return img`
+. . . . 
+1 1 1 1 
+. . . 1 
+. . . . 
+`;
         }
         return null;
     })
