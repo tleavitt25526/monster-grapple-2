@@ -8,7 +8,6 @@
         "Timers": "github:microsoft/arcade-timers#v1.1.0"
     },
     "files": [
-        "main.blocks",
         "main.ts",
         "README.md",
         "assets.json",
