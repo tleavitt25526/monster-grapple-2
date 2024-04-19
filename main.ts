@@ -4,6 +4,8 @@ namespace SpriteKind {
     export const Cursor = SpriteKind.create()
 }
 
+
+// Controller Section
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     if (menu_active) {
         if (declutter.get("cursor").y == 85) {
@@ -13,15 +15,24 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
         difficulty += 1
         difficulty = Math.constrain(difficulty, 0, 3)
         declutter.get("diff").setImage(difficulty_icons[difficulty])
-    } else if (levels_active) {
+    } else if (select_active) {
 
     }
 })
-function LoadSelect() {
-    levels_active = true
-    declutter.load("one", fancyText.create("Lava Pits", 120, 0, fancyText.defaultArcade))
-    declutter.get("one").y += -20
-}
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (menu_active) {
+        if (declutter.get("cursor").y == 75) {
+            declutter.get("cursor").y += 10
+        }
+    } else if (options_active) {
+        difficulty -= 1
+        difficulty = Math.constrain(difficulty, 0, 3)
+        declutter.get("diff").setImage(difficulty_icons[difficulty])
+    } else if (select_active) {
+        // for now Lava Lake is chosen by default
+        
+    }
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (menu_active) {
         if (declutter.get("cursor").y == 75) {
@@ -36,33 +47,15 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         LoadMenu()
     }
 })
-function UnloadOptions() {
-    options_active = false
-    declutter.offload("diff")
-}
-function UnloadLevel() {
-    levels_active = false
-}
-controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (menu_active) {
-        if (declutter.get("cursor").y == 75) {
-            declutter.get("cursor").y += 10
-        }
-    } else if (options_active) {
-        difficulty += -1
-        difficulty = Math.constrain(difficulty, 0, 3)
-        declutter.get("diff").setImage(difficulty_icons[difficulty])
-    } else if (levels_active) {
 
-    }
-})
-function UnloadMenu() {
-    menu_active = false
-    declutter.offload("line")
-    declutter.offload("cursor")
-    declutter.offload("options")
-    declutter.offload("text")
-    declutter.offload("start")
+
+// Load Section
+function LoadSelect() {
+    select_active = true
+    declutter.load("one", fancyText.create("Lava Lake", 120, 0, fancyText.defaultArcade))
+    declutter.get("one").y -= 20
+    declutter.load("two", fancyText.create("Acid Alpine", 120, 0))
+    declutter.get("two").y -= 5
 }
 function LoadMenu() {
     declutter.load("text", fancyText.create("Monster Grapple", 120, 0, fancyText.serif_small))
@@ -87,28 +80,49 @@ function LoadMenu() {
         declutter.get("options").y += 25
     })
 }
-
 function LoadOptions() {
     options_active = true
     declutter.load("diff", sprites.create(difficulty_icons[difficulty], SpriteKind.GUI))
 }
+
+
+// Unload Section
+function UnloadSelect() {
+    select_active = false
+}
+function UnloadMenu() {
+    menu_active = false
+    declutter.offload("line")
+    declutter.offload("cursor")
+    declutter.offload("options")
+    declutter.offload("text")
+    declutter.offload("start")
+}
+function UnloadOptions() {
+    options_active = false
+    declutter.offload("diff")
+}
+
+
+// Start Section
 let ember_active = false
-let levels_active = false
+let select_active = false
 let options_active = false
 let menu_active = false
 let difficulty = 0
 let level = 0
 let difficulty_icons: Image[] = []
-//stats.turnStats(true)
-LoadMenu()
-
 difficulty_icons = [
     assets.image`easy_icon`,
     assets.image`normal_icon`,
     assets.image`hard_icon`,
     assets.image`impossible_icon`
 ]
+stats.turnStats(true)
+LoadMenu()
 
+
+// Update Section
 game.onUpdateInterval(100, function () {
     if (ember_active) {
         if (Math.percentChance(50)) {

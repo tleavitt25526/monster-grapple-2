@@ -5,7 +5,8 @@
         "device": "*",
         "arcade-fancy-text": "github:riknoll/arcade-fancy-text#v0.1.0",
         "Declutter": "github:S0m3randomguy/declutter#6b0626bf1bd2c7d9a70b846031b5226e48ee932a",
-        "Timers": "github:microsoft/arcade-timers#v1.1.0"
+        "Timers": "github:microsoft/arcade-timers#v1.1.0",
+        "Stats": "github:UnsignedArduino/Stats#758e35856bd5565e5d0e25c95cccfac79b7fc168"
     },
     "files": [
         "main.ts",
