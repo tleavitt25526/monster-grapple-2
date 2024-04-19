@@ -12,7 +12,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     } else if (options_active) {
         difficulty += 1
         difficulty = Math.constrain(difficulty, 0, 3)
-        //declutter.get("diff").setImage(difficulty_icons[difficulty])
+        declutter.get("diff").setImage(difficulty_icons[difficulty])
     } else if (levels_active) {
 
     }
@@ -51,7 +51,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     } else if (options_active) {
         difficulty += -1
         difficulty = Math.constrain(difficulty, 0, 3)
-        //declutter.get("diff").setImage(difficulty_icons[difficulty])
+        declutter.get("diff").setImage(difficulty_icons[difficulty])
     } else if (levels_active) {
 
     }
@@ -90,7 +90,7 @@ function LoadMenu() {
 
 function LoadOptions() {
     options_active = true
-    //declutter.load("diff", sprites.create(difficulty_icons[difficulty], SpriteKind.GUI))
+    declutter.load("diff", sprites.create(difficulty_icons[difficulty], SpriteKind.GUI))
 }
 let ember_active = false
 let levels_active = false
@@ -101,14 +101,14 @@ let level = 0
 let difficulty_icons: Image[] = []
 //stats.turnStats(true)
 LoadMenu()
-/*
+
 difficulty_icons = [
     assets.image`easy_icon`,
     assets.image`normal_icon`,
     assets.image`hard_icon`,
     assets.image`impossible_icon`
 ]
-*/
+
 game.onUpdateInterval(100, function () {
     if (ember_active) {
         if (Math.percentChance(50)) {
