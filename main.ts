@@ -57,7 +57,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         case "select":
             UnloadSelect()
             ember_active = false
-            timer.after(3000, function () {
+            color.startFadeFromCurrent(color.Black)
+            timer.after(2000, function () {
+                color.startFadeFromCurrent(color.originalPalette)
                 LoadLavaLakes()
             })
             break
@@ -133,7 +135,7 @@ let vx = 0
 let vy = 0
 let speed = 75
 let ember_active = false
-let active = "menu"
+let active = "default"
 let difficulty = 0
 let level = 0
 let difficulty_icons: Image[] = []
