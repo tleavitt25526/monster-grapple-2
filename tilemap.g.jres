@@ -34,6 +34,18 @@
         "tilemapTile": true,
         "displayName": "tileDark2"
     },
+    "tile6": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile"
+    },
+    "tile7": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile0"
+    },
     "LavaLakes1": {
         "id": "LavaLakes1",
         "mimeType": "application/mkcd-tilemap",
@@ -62,6 +74,20 @@
             "myTiles.tile5"
         ],
         "displayName": "LavaLakes"
+    },
+    "TestLevel1": {
+        "id": "TestLevel1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAwZjAwMGYwMDA1MDUwNTA1MDUwNTA1MDIwMjAyMDIwMjAyMDIwMjA1MDUwNTA1MDUwNTA1MDIwMjAyMDIwMjAyMDIwMjA1MDUwNTA1MDUwNTA1MDIwMjAyMDIwMjAyMDIwMjA1MDUwNTA1MDUwNTA1MDIwMjAyMDIwMjAyMDIwMjA1MDUwNTA1MDUwNTA1MDIwMjAyMDIwMjAyMDIwMjA1MDUwNTA1MDUwNTA1MDIwMjAyMDIwMjAyMDIwMjA1MDUwNTA1MDUwNTA1MDIwMjAyMDIwMjAyMDIwMjA1MDUwNTA1MDUwNTA1MDEwNDA0MDQwNDA0MDQwNDAzMDMwMzAzMDMwMzAzMDMwNDA0MDQwNDA0MDQwNDAzMDMwMzAzMDMwMzAzMDMwNDA0MDQwNDA0MDQwNDAzMDMwMzAzMDMwMzAzMDMwNDA0MDQwNDA0MDQwNDAzMDMwMzAzMDMwMzAzMDMwNDA0MDQwNDA0MDQwNDAzMDMwMzAzMDMwMzAzMDMwNDA0MDQwNDA0MDQwNDAzMDMwMzAzMDMwMzAzMDMwNDA0MDQwNDA0MDQwNDAzMDMwMzAzMDMwMzAzMDMwNDA0MDQwNDA0MDQwNDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA=",
+        "tileset": [
+            "myTiles.transparency16",
+            "myTiles.tile3",
+            "myTiles.tile4",
+            "myTiles.tile2",
+            "myTiles.tile1",
+            "myTiles.tile5"
+        ],
+        "displayName": "TestLevel"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",

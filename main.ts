@@ -60,14 +60,29 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             color.startFadeFromCurrent(color.Black)
             timer.after(2000, function () {
                 color.startFadeFromCurrent(color.originalPalette)
-                LoadLavaLakes()
+                LoadTestLevel()
             })
+            break
+    }
+})
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    switch (active) {
+        case "test":
+            ChangePallete(red_list)
             break
     }
 })
 
 
 // Load Section
+function LoadTestLevel() {
+    active = "test"
+    scene.setTileMapLevel(assets.tilemap`TestLevel`)
+    let playerSprite = sprites.create(assets.image`temp_player`)
+    tiles.placeOnRandomTile(playerSprite, assets.tile`lava_rock`)
+    scene.cameraFollowSprite(playerSprite)
+    controller.moveSprite(playerSprite, vx + speed, vy + speed)
+}
 function LoadLavaLakes() {
     // A fade in will be needed at some point.
     active = "lava"
@@ -147,6 +162,25 @@ difficulty_icons = [
 ]
 stats.turnStats(true)
 LoadMenu()
+
+
+// Pallete Section
+let red_list: string[] = [ // red increments by 30
+    "#F00000",
+    "#B40000",
+    "#8C0000",
+    "#640000"
+]
+let blue_list: string[] = [
+    "#",
+    "#",
+    
+]
+function ChangePallete(list: string[]) {
+    for (let i = 0; i < 4; i++) {
+        color.setColor(11 + i, color.parseColorString(list[i]))
+    }
+}
 
 
 // Update Section
