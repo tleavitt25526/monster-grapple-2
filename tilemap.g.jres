@@ -1,39 +1,48 @@
 {
-    "myTiles.transparency16": {
-        "id": "myTiles.transparency16",
+    "transparency16": {
         "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-        "dataEncoding": "base64",
-        "namespace": "myTiles.",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
-    "myTiles.tile3": {
-        "id": "myTiles.tile3",
+    "tile3": {
         "data": "hwQQABAAAABVu7u7u91EREXLzMzMu91VtLzMzMzMu7uyzMzMzMzM3bLMzLzMvMy7sszMzMzMzLvLvMzMzMzMu8vMzMzMy8zdy8zMzMvMzLu7zMvMzMzMu8vMzMzMzMy7y8zMzMy8vLuyzMy8zMzcvUTLzMzMzLsrVLTMvMy8u0JVRLu7u9u7Qg==",
-        "dataEncoding": "base64",
-        "namespace": "myTiles.",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "lava_rock"
     },
+    "tile4": {
+        "data": "hwQQABAAAADNzMzMzMzM7Nzd3d3d3d3t3N3d3d3d3e3c3d3d3d3d7dzd3d3d3d3t3N3d3d3d3e3c3d3d3d3d7dzd3d3d3d3t3N3d3d3d3e3c3d3d3d3d7dzd3d3d3d3t3N3d3d3d3e3c3d3d3d3d7dzd3d3d3d3t3N3d3d3d3e3u7u7u7u7u3g==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "tileDark1"
+    },
+    "tile2": {
+        "data": "hwQQABAAAAC8u7u7u7u728vMzMzMzMzcy8zMzMzMzNzLzMzMzMzM3MvMzMzMzMzcy8zMzMzMzNzLzMzMzMzM3MvMzMzMzMzcy8zMzMzMzNzLzMzMzMzM3MvMzMzMzMzcy8zMzMzMzNzLzMzMzMzM3MvMzMzMzMzcy8zMzMzMzNzd3d3d3d3dzQ==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "tileLight1"
+    },
+    "tile1": {
+        "data": "hwQQABAAAAC8u7vbvLu728vMzNzLzMzcy8zM3MvMzNzLzMzcy8zM3MvMzNzLzMzcy8zM3MvMzNzLzMzcy8zM3N3d3e3d3d3tvLu727y7u9vLzMzcy8zM3MvMzNzLzMzcy8zM3MvMzNzLzMzcy8zM3MvMzNzLzMzcy8zM3MvMzNzd3d3t3d3d7Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "tileLight0"
+    },
+    "tile5": {
+        "data": "hwQQABAAAADNzMzszczM7Nzd3e3c3d3t3N3d7dzd3e3c3d3t3N3d7dzd3e3c3d3t3N3d7dzd3e3c3d3t3N3d7e7u7v7u7u7+zczM7M3MzOzc3d3t3N3d7dzd3e3c3d3t3N3d7dzd3e3c3d3t3N3d7dzd3e3c3d3t3N3d7dzd3e3u7u7+7u7u/g==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "tileDark2"
+    },
     "LavaLakes1": {
         "id": "LavaLakes1",
-        "data": "MTAxMDAwMTAwMDAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDQwNDAyMDIwMjAyMDIwMjAyMDIwNDAyMDIwMjAyMDIwMjA1MDQwNDAyMDIwMjAyMGUwNTA0MDIwMjAyMDIwMjA5MDgwNzA0MDIwMjAyMDIwNDA5MDIwMjAyMDIwMjAyMGIwNDA5MDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjEyMGQwZDBkMGQxMzAyMDIwMjAyMDIwMjAyMDIwMjEyMGUwMTAxMDEwZjBhMTMwMjAyMDIwMjAyMDIwMjAyMGMwZjAxMDEwZjAxMDEwYTEzMDcwYTAyMDIwMjA2MGEwYzAxMGYwMTAxMGYwMTAxMGExMzA2MDIwMjAyMDkwNTBjMDEwZjBmMTYwMTBmMDEwZjEwMDQwMjAyMDIwODA0MTUwYjAxMDEwZjBmMDEwZjAxMTAwMjAyMDIwMjAyMDIwMjBjMGYwZjAxMDEwZjAxMDMxNDAyMDIwMjAyMDIwMjAyMTUxMTBiMDEwZjAxMDMxNDBkMDIwMjAyMDIwMjAyMDIwMjAyMTUxMTExMTExNDAyMDcwOTAyMDIwMjAyMDIwYzA3MDIwMjAyMDIwMjAyMDIwMjA4MDQwMjAyMDIwMjAyMDkwNDAyMDIwMjAyMDIwMjAyMDIwMjAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
-        "dataEncoding": "base64",
-        "namespace": "myTiles.",
         "mimeType": "application/mkcd-tilemap",
-        "displayName": "LavaLakes",
+        "data": "MTAxMDAwMTAwMDEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMTEzMTExMTExMTExMTEyMTIxMjEyMTIxMjEyMTExMTExMDIwMjAyMDIxMTExMTExMjEyMTIxMjEyMTExMTBjMDcwNzA3MDcwZDExMTExMTEyMTIxMjEyMTIxMTBjMDgwMTAxMDEwOTA0MGQwMjExMTExMjEyMTIxMjExMDYwOTAxMDEwOTAxMDEwNDBkMTExMTEyMTIxMjExMTEwNjAxMDkwMTAxMDkwMTAxMDQwZDExMTIxMjEyMTExMTA2MDEwOTA5MTAwMTA5MDEwOTBhMTExMTEyMTIxMjExMGYwNTAxMDEwOTA5MDEwOTAxMGExMTExMTIxMjEyMTEwMjA2MDkwOTAxMDEwOTAxMDMwZTExMTExMjEyMTIxMTExMGYwYjA1MDEwOTAxMDMwZTA3MTExMTEyMTIxMjEyMTExMTAyMGYwYjBiMGIwZTAyMTExMTEyMTIxMjEyMTIxMjExMTExMTExMTExMTExMTExMTEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjExMTExMTEyMTIxMjAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
         "tileset": [
             "myTiles.transparency16",
             "sprites.dungeon.hazardLava0",
             "sprites.dungeon.darkGroundCenter",
             "sprites.dungeon.darkGroundNorthWest0",
-            "sprites.dungeon.floorDark2",
-            "sprites.dungeon.floorDark3",
-            "sprites.dungeon.floorDark4",
-            "sprites.dungeon.floorDarkDiamond",
-            "sprites.dungeon.floorDark5",
-            "sprites.dungeon.floorDark0",
             "sprites.dungeon.darkGroundSouthWest0",
             "sprites.dungeon.darkGroundNorthEast0",
             "sprites.dungeon.darkGroundEast",
@@ -46,7 +55,17 @@
             "sprites.dungeon.darkGroundNorthEast1",
             "sprites.dungeon.darkGroundSouthEast1",
             "sprites.dungeon.darkGroundSouthWest1",
-            "myTiles.tile3"
-        ]
+            "myTiles.tile3",
+            "myTiles.tile2",
+            "myTiles.tile4",
+            "myTiles.tile1",
+            "myTiles.tile5"
+        ],
+        "displayName": "LavaLakes"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
     }
 }
