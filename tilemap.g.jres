@@ -1,0 +1,52 @@
+{
+    "myTiles.transparency16": {
+        "id": "myTiles.transparency16",
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "dataEncoding": "base64",
+        "namespace": "myTiles.",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "myTiles.tile3": {
+        "id": "myTiles.tile3",
+        "data": "hwQQABAAAABVu7u7u91EREXLzMzMu91VtLzMzMzMu7uyzMzMzMzM3bLMzLzMvMy7sszMzMzMzLvLvMzMzMzMu8vMzMzMy8zdy8zMzMvMzLu7zMvMzMzMu8vMzMzMzMy7y8zMzMy8vLuyzMy8zMzcvUTLzMzMzLsrVLTMvMy8u0JVRLu7u9u7Qg==",
+        "dataEncoding": "base64",
+        "namespace": "myTiles.",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "lava_rock"
+    },
+    "LavaLakes1": {
+        "id": "LavaLakes1",
+        "data": "MTAxMDAwMTAwMDAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDQwNDAyMDIwMjAyMDIwMjAyMDIwNDAyMDIwMjAyMDIwMjA1MDQwNDAyMDIwMjAyMGUwNTA0MDIwMjAyMDIwMjA5MDgwNzA0MDIwMjAyMDIwNDA5MDIwMjAyMDIwMjAyMGIwNDA5MDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjEyMGQwZDBkMGQxMzAyMDIwMjAyMDIwMjAyMDIwMjEyMGUwMTAxMDEwZjBhMTMwMjAyMDIwMjAyMDIwMjAyMGMwZjAxMDEwZjAxMDEwYTEzMDcwYTAyMDIwMjA2MGEwYzAxMGYwMTAxMGYwMTAxMGExMzA2MDIwMjAyMDkwNTBjMDEwZjBmMTYwMTBmMDEwZjEwMDQwMjAyMDIwODA0MTUwYjAxMDEwZjBmMDEwZjAxMTAwMjAyMDIwMjAyMDIwMjBjMGYwZjAxMDEwZjAxMDMxNDAyMDIwMjAyMDIwMjAyMTUxMTBiMDEwZjAxMDMxNDBkMDIwMjAyMDIwMjAyMDIwMjAyMTUxMTExMTExNDAyMDcwOTAyMDIwMjAyMDIwYzA3MDIwMjAyMDIwMjAyMDIwMjA4MDQwMjAyMDIwMjAyMDkwNDAyMDIwMjAyMDIwMjAyMDIwMjAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "dataEncoding": "base64",
+        "namespace": "myTiles.",
+        "mimeType": "application/mkcd-tilemap",
+        "displayName": "LavaLakes",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.dungeon.hazardLava0",
+            "sprites.dungeon.darkGroundCenter",
+            "sprites.dungeon.darkGroundNorthWest0",
+            "sprites.dungeon.floorDark2",
+            "sprites.dungeon.floorDark3",
+            "sprites.dungeon.floorDark4",
+            "sprites.dungeon.floorDarkDiamond",
+            "sprites.dungeon.floorDark5",
+            "sprites.dungeon.floorDark0",
+            "sprites.dungeon.darkGroundSouthWest0",
+            "sprites.dungeon.darkGroundNorthEast0",
+            "sprites.dungeon.darkGroundEast",
+            "sprites.dungeon.darkGroundSouth",
+            "sprites.dungeon.darkGroundSouthEast0",
+            "sprites.dungeon.hazardLava1",
+            "sprites.dungeon.darkGroundWest",
+            "sprites.dungeon.darkGroundNorth",
+            "sprites.dungeon.darkGroundNorthWest1",
+            "sprites.dungeon.darkGroundNorthEast1",
+            "sprites.dungeon.darkGroundSouthEast1",
+            "sprites.dungeon.darkGroundSouthWest1",
+            "myTiles.tile3"
+        ]
+    }
+}

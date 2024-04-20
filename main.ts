@@ -56,7 +56,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             break
         case "select":
             UnloadSelect()
-            LoadLavaLakes()
+            ember_active = false
+            timer.after(3000, function () {
+                LoadLavaLakes()
+            })
             break
     }
 })
@@ -64,7 +67,13 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 // Load Section
 function LoadLavaLakes() {
+    // A fade in will be needed at some point.
     active = "lava"
+    scene.setTileMapLevel(assets.tilemap`LavaLakes`)
+    let playerSprite = sprites.create(assets.image`temp_player`)
+    tiles.placeOnRandomTile(playerSprite, assets.tile`lava_rock`)
+    scene.cameraFollowSprite(playerSprite)
+    controller.moveSprite(playerSprite, vx + speed, vy + speed)
 }
 function LoadSelect() {
     active = "select"
@@ -120,6 +129,9 @@ function UnloadOptions() {
 
 
 // Start Section
+let vx = 0
+let vy = 0
+let speed = 75
 let ember_active = false
 let active = "menu"
 let difficulty = 0
