@@ -77,20 +77,22 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 
 // Overlap Section
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Statue, function(sprite: Sprite, otherSprite: Sprite) {
-    if (controller.B.isPressed()) {
+    if (controller.B.isPressed() && interactDelay == 0) {
+        interactDelay = 5
         camLock = !camLock
         if (camLock) {
-            //scene.centerCameraAt()
+            scene.cameraFollowSprite(otherSprite)
         } else {
-
+            scene.cameraFollowSprite(sprite)
         }
     }
+    
 })
 
 
 // Player Section
 function CreatePlayer(spawn: number[]) {
-    playerSprite = sprites.create(assets.image`temp_player`)
+    playerSprite = sprites.create(assets.image`temp_player`, SpriteKind.Player)
     tiles.placeOnTile(playerSprite, tiles.getTileLocation(spawn[0], spawn[1]))
     scene.cameraFollowSprite(playerSprite)
     controller.moveSprite(playerSprite, speed)
@@ -171,6 +173,7 @@ let playerSprite: Sprite
 let speed = 75
 let ember_active = false
 let player_active = false
+let interactDelay = 0
 let camLock = false
 let active = "default"
 let difficulty = 0
@@ -216,5 +219,8 @@ game.onUpdateInterval(100, function () {
         declutter.get("ember").setPosition(randint(0, 180), 120)
         declutter.get("ember").setVelocity(0, -50)
         declutter.get("ember").setFlag(SpriteFlag.AutoDestroy, true)
+    }
+    if (interactDelay > 0) {
+        interactDelay -= 1
     }
 })
