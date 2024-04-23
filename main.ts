@@ -1,6 +1,7 @@
 namespace SpriteKind {
     export const GUI = SpriteKind.create()
     export const Particle = SpriteKind.create()
+    export const Statue = SpriteKind.create()
 }
 
 
@@ -68,20 +69,41 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     switch (active) {
         case "test":
-            ChangePallete(red_list)
+        
             break
     }
 })
+
+
+// Overlap Section
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Statue, function(sprite: Sprite, otherSprite: Sprite) {
+    if (controller.B.isPressed()) {
+        camLock = !camLock
+        if (camLock) {
+            //scene.centerCameraAt()
+        } else {
+
+        }
+    }
+})
+
+
+// Player Section
+function CreatePlayer(spawn: number[]) {
+    playerSprite = sprites.create(assets.image`temp_player`)
+    tiles.placeOnTile(playerSprite, tiles.getTileLocation(spawn[0], spawn[1]))
+    scene.cameraFollowSprite(playerSprite)
+    controller.moveSprite(playerSprite, speed)
+    player_active = true
+}
 
 
 // Load Section
 function LoadTestLevel() {
     active = "test"
     scene.setTileMapLevel(assets.tilemap`TestLevel`)
-    let playerSprite = sprites.create(assets.image`temp_player`)
-    tiles.placeOnRandomTile(playerSprite, assets.tile`lava_rock`)
-    scene.cameraFollowSprite(playerSprite)
-    controller.moveSprite(playerSprite, vx + speed, vy + speed)
+    CreatePlayer([7, 7])
+    declutter.load("statue1", sprites.create(assets.image`statue_sprite`, SpriteKind.Statue))
 }
 function LoadLavaLakes() {
     // A fade in will be needed at some point.
@@ -90,7 +112,6 @@ function LoadLavaLakes() {
     let playerSprite = sprites.create(assets.image`temp_player`)
     tiles.placeOnRandomTile(playerSprite, assets.tile`lava_rock`)
     scene.cameraFollowSprite(playerSprite)
-    controller.moveSprite(playerSprite, vx + speed, vy + speed)
 }
 function LoadSelect() {
     active = "select"
@@ -146,10 +167,11 @@ function UnloadOptions() {
 
 
 // Start Section
-let vx = 0
-let vy = 0
+let playerSprite: Sprite
 let speed = 75
 let ember_active = false
+let player_active = false
+let camLock = false
 let active = "default"
 let difficulty = 0
 let level = 0

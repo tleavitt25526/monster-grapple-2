@@ -39,6 +39,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "hard_icon"
     },
+    "image9": {
+        "data": "hwQQACAAAAAAAAAAAAAAAADw////////AAAAAAAAAAAA3+7u7t68+wAAAAAAAAD/AN/d3e7ezPsAAAAAAPD/7A/fzNvt7sz7AAAAAP/PvNv/39y93e7M+wD////d3f3Pu8zM3dzt3Pzw7rvNvP/PzO7u7t687dz877ze7L7Lzu7u3czMu+3c/O/r7r277u7ezcy8u7vt3Pzv7M7r7uvt7u7u7t687dz88P/vvu3O3t3t3t3dvO3c/AAA8O7O7v/L3N3NzNvuzPsAAAD///8A///r3bzb7sz7AAAAAAAAAAAA38zb3d68+wAAAAAAAAAAAN/d3e7evPwAAAAAAAAAAADw////////",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "statue_sprite"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
