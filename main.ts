@@ -69,24 +69,25 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     switch (active) {
         case "test":
-        
+
             break
     }
 })
 
 
 // Overlap Section
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Statue, function(sprite: Sprite, otherSprite: Sprite) {
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Statue, function (sprite: Sprite, otherSprite: Sprite) {
     if (controller.B.isPressed() && interactDelay == 0) {
         interactDelay = 5
         camLock = !camLock
+        playerSprite.setStayInScreen(camLock)
         if (camLock) {
             scene.cameraFollowSprite(otherSprite)
         } else {
             scene.cameraFollowSprite(sprite)
         }
     }
-    
+
 })
 
 
@@ -95,8 +96,9 @@ function CreatePlayer(spawn: number[]) {
     playerSprite = sprites.create(assets.image`temp_player`, SpriteKind.Player)
     tiles.placeOnTile(playerSprite, tiles.getTileLocation(spawn[0], spawn[1]))
     scene.cameraFollowSprite(playerSprite)
-    controller.moveSprite(playerSprite, speed)
+    controller.moveSprite(playerSprite, speed, speed)
     player_active = true
+    playerSprite.z = 10
 }
 
 
@@ -199,7 +201,7 @@ let red_list: string[] = [ // red increments by 30
 let blue_list: string[] = [
     "#",
     "#",
-    
+
 ]
 function ChangePallete(list: string[]) {
     for (let i = 0; i < 4; i++) {
@@ -222,5 +224,20 @@ game.onUpdateInterval(100, function () {
     }
     if (interactDelay > 0) {
         interactDelay -= 1
+    }
+
+    if (active == "test") {
+        /*
+            I have an idea where I only use one statue, and have different spots
+            that it moves to throughout the level.
+        */
+        let statueList = sprites.allOfKind(SpriteKind.Statue)
+        for (let i = 0; i < statueList.length; i++) {
+            if (statueList[i].y > playerSprite.y) {
+                statueList[i].z = 11
+            } else {
+                statueList[i].z = 9
+            }
+        }
     }
 })

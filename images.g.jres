@@ -1,9 +1,4 @@
 {
-    "image1": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAPD/DwDwDwAA////APAPAPD/////8A8A8P////////////////////////////8P/////////w////////////D/////////8P/////wDwAA////APAPAADw/w8A8A8AAAAAAAAAAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "temp_player"
-    },
     "image2": {
         "data": "hwQBAAEAAAAEAAAA",
         "mimeType": "image/x-mkcd-f4",
@@ -43,6 +38,21 @@
         "data": "hwQQACAAAAAAAAAAAAAAAADw////////AAAAAAAAAAAA3+7u7t68+wAAAAAAAAD/AN/d3e7ezPsAAAAAAPD/7A/fzNvt7sz7AAAAAP/PvNv/39y93e7M+wD////d3f3Pu8zM3dzt3Pzw7rvNvP/PzO7u7t687dz877ze7L7Lzu7u3czMu+3c/O/r7r277u7ezcy8u7vt3Pzv7M7r7uvt7u7u7t687dz88P/vvu3O3t3t3t3dvO3c/AAA8O7O7v/L3N3NzNvuzPsAAAD///8A///r3bzb7sz7AAAAAAAAAAAA38zb3d68+wAAAAAAAAAAAN/d3e7evPwAAAAAAAAAAADw////////",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "statue_sprite"
+    },
+    "image1": {
+        "data": "hwQQABAAAAAAAAAAAPD/AAAAAAAA8P8A///////wDwD///////APAP//////8A8A//////////////////////////////8P/////////w/////////////////////////////wDwD///////APAP//////8A8AAAAAAADw/wAAAAAAAPD/AA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "temp_player"
+    },
+    "image10": {
+        "data": "hwQgACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw////7w4AAAAAAAAA8P9PRN9U1PztAAAAAAAA8E/9LFLPJE397QAAAAAAAM9SRN9E9E3V/+0AAEAAAADP1F3/AP///90OAABEAAAA/////w8AAAAAAFBUVQAAAO9cJEL/AAAAAEBCFUQAAPDsTFUiJP8vACLNTxQkAP///yxSJSTVL1Qk/E9FIvDPIuz/QkVU1fJCRf9ERf/PLCVE/c4VIeT9QkVEVfT/383s7v5UVCHi/C9UEUT0z9/dzd39REIlxNQvQkFVVdzfLSXk/s4cQVXVT0JFRFQk78wi9M8sFFVFLU9CRS9UJPDu/v/cVBUkQv0vREX8T0UA///MRCJURVT1RFVU/E9VAADwTSUkQiXC/VVEVM1PRAAA8P3//99UxP9EIkJFIkQAAPDP3dT8TfUvAAAgFERVAAAAz0xE/P//AAAAAEIRRAAAAM9dJVQPAAAAAAAAAEQAAABPJeJFz/D//9AOAABAAAAA/9Xe/ULP7VT/DQAAAAAAAPDfzP/03ETu/O0AAAAAAAAA8P/u/E3lxP7tAAAAAAAAAAAAAO7////vDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "lava_brute"
+    },
+    "image11": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAA//8AAAD///+Z+Q8A/5mZmREPAPAREREREfkPHxEvHxGZGQ8f8V9EkRER+R8REREREZEPHxERERER+Q+fEV//FJkPAJ8R8S8REfEP8BkRERERmfEA/xGZmRER+QAA////mRkPAAAAAAD//wAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "lost_soul"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
