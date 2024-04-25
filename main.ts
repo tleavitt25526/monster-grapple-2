@@ -2,6 +2,7 @@ namespace SpriteKind {
     export const GUI = SpriteKind.create()
     export const Particle = SpriteKind.create()
     export const Statue = SpriteKind.create()
+    export const Link = SpriteKind.create()
 }
 
 
@@ -99,20 +100,21 @@ function CreatePlayer(spawn: number[]) {
     playerSprite = sprites.create(assets.image`temp_player`, SpriteKind.Player)
     tiles.placeOnTile(playerSprite, tiles.getTileLocation(spawn[0], spawn[1]))
     scene.cameraFollowSprite(playerSprite)
-    controller.moveSprite(playerSprite, speed)
+    controller.moveSprite(playerSprite, speed, speed)
     player_active = true
     playerSprite.z = 10
 }
 function Grapple() {
     if (grappleDelay == 0) {
-        grappleDelay = 5
-        controller.moveSprite(playerSprite, 0)
+        grappleDelay = 10
+        controller.moveSprite(playerSprite, 0, 0)
         for (let i = 0; i < 10; i++) {
             declutter.load("chainlink", sprites.create(assets.image`chainlink`))
             declutter.get("chainlink").setPosition(playerSprite.x, playerSprite.y)
             declutter.get("chainlink").x += controller.dx() * i * 1.5
             declutter.get("chainlink").y += controller.dy() * i * 1.5
             declutter.get("chainlink").lifespan = 1000
+            if (i == 10) declutter.get("chainlink").setKind(SpriteKind.Link)    
             pause(10)
             //declutter.get("chainlink").vx = controller.dx() * i * 10
             //declutter.get("chainlink").vy = controller.dy() * i * 10
@@ -249,7 +251,7 @@ game.onUpdateInterval(100, function () {
     }
     if (grappleDelay > 0) {
         grappleDelay -= 1
-        if (grappleDelay == 0) controller.moveSprite(playerSprite, speed)
+        if (grappleDelay == 0) controller.moveSprite(playerSprite, speed, speed)
     }
 
     if (active == "test") {
