@@ -54,6 +54,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "lost_soul"
     },
+    "image12": {
+        "data": "hwQFAAUAAADQ3wAA7eANAA8ADwDt4A0A0N8AAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "chainlink"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",

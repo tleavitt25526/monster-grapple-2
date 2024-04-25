@@ -204,6 +204,14 @@ f f . . . f f f f f f . . . f f
 . . f . f f 9 f f . f 1 9 f . . 
 . . . . . . f . . . . f f . . . 
 `;
+            case "image12":
+            case "chainlink":return img`
+. d f d . 
+d e . e d 
+f . . . f 
+d e . e d 
+. d f d . 
+`;
         }
         return null;
     })
