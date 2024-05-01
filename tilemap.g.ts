@@ -1,181 +1,4 @@
 // Auto-generated code. Do not edit.
-namespace myImages {
-
-    helpers._registerFactory("image", function(name: string) {
-        switch(helpers.stringTrim(name)) {
-            case "myTiles.transparency16":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`;
-            case "myTiles.tile3":
-            case "lava_rock":return img`
-5 5 4 2 2 2 b b b b b b 2 4 4 5 
-5 4 b b b b c c c b c c b 4 5 5 
-b b c c c c c c c c c c c b 4 4 
-b c b c c c b c c c c c c c b 4 
-b c c c c c c c c b c c c c c b 
-b c c c c c c c c c c c c c c b 
-b c c c c c c c c c c c c c c b 
-b c c c b c c c c c c c b c b b 
-b c c c c c c c b c c c c c c b 
-b c c c c c c c c c c c c c c b 
-d b c c c c c b c c c c c c c b 
-d b c c b c c c c c c b c c b d 
-4 d b c c c c c c c c c c b b b 
-4 d b c c c c c c c c b d b b b 
-4 5 b d b b b d b b b b d b 2 2 
-4 5 b d b b b d b b b b b 2 4 4 
-`;
-            case "myTiles.tile4":
-            case "tileDark1":return img`
-d c c c c c c c c c c c c c c e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-c d d d d d d d d d d d d d d e 
-e e e e e e e e e e e e e e e d 
-`;
-            case "myTiles.tile2":
-            case "tileLight1":return img`
-c b b b b b b b b b b b b b b d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-b c c c c c c c c c c c c c c d 
-d d d d d d d d d d d d d d d c 
-`;
-            case "myTiles.tile1":
-            case "tileLight0":return img`
-c b b b b b b d c b b b b b b d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-d d d d d d d e d d d d d d d e 
-c b b b b b b d c b b b b b b d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-b c c c c c c d b c c c c c c d 
-d d d d d d d e d d d d d d d e 
-`;
-            case "myTiles.tile5":
-            case "tileDark2":return img`
-d c c c c c c e d c c c c c c e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-e e e e e e e f e e e e e e e f 
-d c c c c c c e d c c c c c c e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-c d d d d d d e c d d d d d d e 
-e e e e e e e f e e e e e e e f 
-`;
-            case "myTiles.tile6":
-            case "myTile":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`;
-            case "myTiles.tile7":
-            case "myTile0":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`;
-        }
-        return null;
-    })
-
-    helpers._registerFactory("animation", function(name: string) {
-        switch(helpers.stringTrim(name)) {
-
-        }
-        return null;
-    })
-
-    helpers._registerFactory("song", function(name: string) {
-        switch(helpers.stringTrim(name)) {
-
-        }
-        return null;
-    })
-
-}
-// Auto-generated code. Do not edit.
-
-// Auto-generated code. Do not edit.
 namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const transparency16 = image.ofBuffer(hex``);
@@ -239,21 +62,21 @@ namespace myTiles {
 
     helpers._registerFactory("tile", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "transparency16":return myTiles.transparency16;
+            case "transparency16":return transparency16;
             case "lava_rock":
-            case "tile3":return myTiles.tile3;
+            case "tile3":return tile3;
             case "tileDark1":
-            case "tile4":return myTiles.tile4;
+            case "tile4":return tile4;
             case "tileLight1":
-            case "tile2":return myTiles.tile2;
+            case "tile2":return tile2;
             case "tileLight0":
-            case "tile1":return myTiles.tile1;
+            case "tile1":return tile1;
             case "tileDark2":
-            case "tile5":return myTiles.tile5;
+            case "tile5":return tile5;
             case "myTile":
-            case "tile6":return myTiles.tile6;
+            case "tile6":return tile6;
             case "myTile0":
-            case "tile7":return myTiles.tile7;
+            case "tile7":return tile7;
         }
         return null;
     })
