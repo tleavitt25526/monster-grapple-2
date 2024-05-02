@@ -73,7 +73,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     switch (active) {
         case "test":
-            //ChangePallete(red_list)
+            ChangePallete(red_list)
             break
     }
 })
